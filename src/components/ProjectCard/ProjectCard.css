@@ -1,0 +1,10 @@
+
+.Card {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+}
+.footer p{
+  background-color: inherit;
+}
