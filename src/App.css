@@ -53,11 +53,25 @@
 .red{
   background-color: red;
 }
+.Button{
+  color: aliceblue;
+}
 .yellow{
   background-color: yellow;
 }
 .blue{
   background-color: blue;
 }
+
+/* //Login */
+
+.Modal {
+  background-color: #282c34;
+  color: white;
+}
+.Textbox{
+  margin-bottom: 5px;
+}
+
 
 

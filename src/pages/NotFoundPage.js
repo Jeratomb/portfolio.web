@@ -1,9 +1,12 @@
-
-export default function NotFoundPage(){
-    return (
-        <>
+import Footer from "../components/Footer/Footer";
+export default function NotFoundPage() {
+  return (
+    <>
+      <div className="App-main">
         <h1>Ups....!</h1>
         <p>Diese Seite existiert leider nicht-Sorry!</p>
-        </>
-    );
+      </div>
+      <Footer />
+    </>
+  );
 }

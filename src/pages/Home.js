@@ -1,17 +1,11 @@
-import Footer from '../components/Footer/Footer';
+import Footer from "../components/Footer/Footer";
 
-export default function Home(){
-    return(
-      <div>
-      <header className='App-header'>
-
-        </header>
-  
-        <main className='App-main'>
-        My Body
-        </main>
-        
-        <Footer />
-        </div>
-    );
+export default function Home() {
+  return (
+    <div>
+      <header className="App-header">Header</header>
+      <main className="App-main">Body</main>
+      <Footer />
+    </div>
+  );
 }
