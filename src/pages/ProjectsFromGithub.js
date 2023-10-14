@@ -1,6 +1,6 @@
-import GetListOfProject from "../components/Project/GetListOfProject";
+import GetProjectsFromGithub from "../components/GetProjectsFromGithub";
 
-export default function Projects() {
+export default function ProjectsFromGithub() {
   return (
     <div>
       <header className="App-header">
@@ -8,7 +8,7 @@ export default function Projects() {
       </header>
       <main className="App-main">
         <div className="App-main">
-          <GetListOfProject />
+          <GetProjectsFromGithub />
         </div></main>
     </div>
   );

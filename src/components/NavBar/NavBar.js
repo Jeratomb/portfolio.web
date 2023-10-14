@@ -13,8 +13,9 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/ProjectsFromGithub">Projects from GitHub</Nav.Link>
             <Nav.Link href="/skills">Skills</Nav.Link>
-            <Auth className="justify-content-end" />
+            <Auth />
           </Nav>
         </Navbar.Collapse>
       </Container>

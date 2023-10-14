@@ -2,21 +2,24 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './ProjectCard.css';
 
-function ProjectCard() {
+function ProjectCard({props}) {
   return (
-    <Card className='Card'>
-      <Card.Header>Project</Card.Header>
+    <>
+      <Card.Header>{props.name}</Card.Header>
       <Card.Body>
-        <Card.Title>Creating Web API</Card.Title>
+        <Card.Title>{props.id}</Card.Title>
         <Card.Text>
-          Used stack:
+          {props.description}
           <ul>
-            .NET CORE 7
+            {props.creationDate}
+          </ul>
+          <ul>
+            {props.lastUpdateDate}
           </ul>
         </Card.Text>
-        <Button variant="primary">Explore on Github</Button>
+        <Button variant="primary">Check on Github</Button>
       </Card.Body>
-    </Card>
+    </>
   );
 }
 
