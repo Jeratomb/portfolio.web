@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Working with portfolio-api
+
+clone the repository for Github https://github.com/Jeratomb/portfolio.api.git
+
+Start the application with this command
+### `dotnet run`
+
+## Swagger
+You can test the API with swaggerby calling the swagger page of the API
+i.e. http://localhost:5278/swagger
