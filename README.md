@@ -79,4 +79,4 @@ Start the application with this command
 
 ## Swagger
 You can test the API with swaggerby calling the swagger page of the API
-i.e. http://localhost:5278/swagger
+i.e. http://localhost:5278/swagger/index.html
