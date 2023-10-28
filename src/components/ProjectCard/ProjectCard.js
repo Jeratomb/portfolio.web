@@ -1,21 +1,23 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import './ProjectCard.css';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./ProjectCard.css";
 
 function ProjectCard({ project }) {
   return (
-    <Card className="Card">
-      <Card.Header>{project.name}</Card.Header>
-      <Card.Body>
-        <Card.Title>{project.id}</Card.Title>
+    <Card style={{ width: "15rem" }} className="card d-flex flex-column Card">
+      <Card.Header>
+        <Card.Title>{project.name}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Subtitle</Card.Subtitle>
+      </Card.Header>
+      <Card.Body className="d-flex flex-column justify-content-end align-items-center">
         <Card.Text>
           {project.description}
-          <ul>
+          {/* <ul>
             {project.usedSkills.map((knowledge) => (
               <li key={knowledge._id}>{knowledge._name}</li>
             ))}
-          </ul>
+          </ul> */}
           <ul>{project.creationDate}</ul>
           <ul>{project.lastUpdateDate}</ul>
         </Card.Text>

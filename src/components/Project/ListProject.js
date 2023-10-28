@@ -5,6 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProjectCard from '../ProjectCard/ProjectCard'; 
 import Footer from "../Footer/Footer";
+import CardGroup from 'react-bootstrap/CardGroup';
+import "./ListProject.css";
+
 
 class ListProject extends Component {
   state = {
@@ -26,15 +29,16 @@ class ListProject extends Component {
     const { projects } = this.state;
 
     return (
-      <Container>
-        <Row>
+
+        <CardGroup className="xs-flex justify-content-around">
           {projects.map((project) => (
-            <Col xs={3} key={project.id}>
+            <Row xs={4}>
+
               <ProjectCard project={project} /> 
-            </Col>
+            </Row>
           ))}
-        </Row>
-      </Container>
+        </CardGroup>
+
     );
   }
 }

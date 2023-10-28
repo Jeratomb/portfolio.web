@@ -1,11 +1,7 @@
 
 .Card {
-  text-align: center;
-  background-color: #333;
-  color: white;
+  margin: 10px;
   font-size: 14px;
-
-
 }
 .Card.Text{
   font-size: 10px;
