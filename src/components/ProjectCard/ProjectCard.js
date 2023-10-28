@@ -1,20 +1,25 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './ProjectCard.css';
 
-function ProjectCard() {
+function ProjectCard({ project }) {
   return (
-    <Card className='Card'>
-      <Card.Header>Project</Card.Header>
+    <Card className="Card">
+      <Card.Header>{project.name}</Card.Header>
       <Card.Body>
-        <Card.Title>Creating Web API</Card.Title>
+        <Card.Title>{project.id}</Card.Title>
         <Card.Text>
-          Used stack:
+          {project.description}
           <ul>
-            .NET CORE 7
+            {project.usedSkills.map((knowledge) => (
+              <li key={knowledge._id}>{knowledge._name}</li>
+            ))}
           </ul>
+          <ul>{project.creationDate}</ul>
+          <ul>{project.lastUpdateDate}</ul>
         </Card.Text>
-        <Button variant="primary">Explore on Github</Button>
+        <Button variant="primary">Check on Github</Button>
       </Card.Body>
     </Card>
   );
