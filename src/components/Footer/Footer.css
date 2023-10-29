@@ -1,10 +1,12 @@
-
 .footer {
   text-align: center;
   background-color: #333;
   color: white;
   margin-top: auto;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
-.footer p{
+.footer p {
   background-color: inherit;
 }

@@ -21,20 +21,23 @@ function Auth() {
     setShow(true);
   };
 
-  const [credentials, setCredentialsInfos] = useState({ Email: '', Pwd: '' });
+  const [credentials, setCredentialsInfos] = useState({ Email: "", Pwd: "" });
   function changeCredentialsProperties(e) {
     console.log(credentials);
     console.log(credentials.Email);
     console.log(credentials.Pwd);
-    setCredentialsInfos({ ...credentials, [e.target.controlId]: e.target.value });
+    setCredentialsInfos({
+      ...credentials,
+      [e.target.controlId]: e.target.value,
+    });
   }
 
   return (
     <>
       {success ? (
         <section>
-          <Nav key='success' variant='success'>
-           <Nav.Link>Signed in as: {credentials.Email}</Nav.Link> 
+          <Nav key="success" variant="success">
+            <Nav.Link>Signed in as: {credentials.Email}</Nav.Link>
           </Nav>
         </section>
       ) : (
@@ -44,7 +47,7 @@ function Auth() {
           </Navbar.Collapse>
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton className="Modal">
-              <Modal.Title>Sign In</Modal.Title>{" "}
+              <Modal.Title className="header-modal">Sign In</Modal.Title>{" "}
             </Modal.Header>
             <Modal.Body className="Modal">
               <Form>
@@ -58,7 +61,7 @@ function Auth() {
                     <Form.Control
                       type="email"
                       placeholder="name@example.com"
-                      onChange={(e) => credentials.Email = e.target.value}
+                      onChange={(e) => (credentials.Email = e.target.value)}
                     />
                   </FloatingLabel>
                   <FloatingLabel
@@ -66,7 +69,7 @@ function Auth() {
                     controlId="Pwd"
                     label="Password"
                     value={credentials.Pwd}
-                    onChange={(e) =>  credentials.Pwd = e.target.value}
+                    onChange={(e) => (credentials.Pwd = e.target.value)}
                   >
                     <Form.Control type="password" placeholder="Password" />
                   </FloatingLabel>

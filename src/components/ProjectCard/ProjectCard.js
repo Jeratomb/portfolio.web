@@ -13,11 +13,11 @@ function ProjectCard({ project }) {
       <Card.Body className="d-flex flex-column justify-content-end align-items-center">
         <Card.Text>
           {project.description}
-          {/* <ul>
+          <ul>
             {project.usedSkills.map((knowledge) => (
               <li key={knowledge._id}>{knowledge._name}</li>
             ))}
-          </ul> */}
+          </ul>
           <ul>{project.creationDate}</ul>
           <ul>{project.lastUpdateDate}</ul>
         </Card.Text>

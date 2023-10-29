@@ -1,4 +1,4 @@
-html{
+html {
   background-color: #282c34;
 }
 .body {
@@ -7,7 +7,7 @@ html{
   flex-direction: column;
   margin-top: 0px;
 }
-.Nav{
+.Nav {
   background-color: #333;
   color: white;
   display: flex;
@@ -16,6 +16,6 @@ html{
   gap: 2rem;
   padding: 0 1rem;
 }
-.Nav a{
+.Nav a {
   color: inherit;
 }

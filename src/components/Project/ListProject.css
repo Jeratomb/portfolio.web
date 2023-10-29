@@ -1,11 +1,15 @@
-
 .Card {
   margin: 10px;
   font-size: 14px;
 }
-.Card.Text{
+.Card.Text {
   font-size: 10px;
 }
-.footer p{
+.footer p {
   background-color: inherit;
+}
+
+.test {
+  margin-bottom: 100px;
+  margin-top: 50px;
 }

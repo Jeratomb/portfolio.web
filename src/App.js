@@ -1,13 +1,6 @@
-import logo from './logo.svg'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Nav from 'react-bootstrap/Nav'
 import Footer from './components/Footer/Footer'
-import ProjectCard from './components/ProjectCard/ProjectCard'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { Card } from 'react-bootstrap'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
 import NotFoundPage from './pages/NotFoundPage'
@@ -29,7 +22,7 @@ function App() {
         <Route path ="*" element={<NotFoundPage />} />
       </Routes>
       </BrowserRouter>
-
+      <Footer />
     </div>
 );
 }
