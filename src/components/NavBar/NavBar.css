@@ -1,0 +1,38 @@
+.menuholder {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 21px 21px 0px 21px;
+  background: transparent;
+  z-index: 999;
+}
+
+.tomenuholder {
+  position: relative;
+  float: left;
+  width: 60%;
+  text-align: center;
+  z-index: 999;
+}
+
+.tomenu {
+  background: rgba(41, 41, 41, 0.7);
+  border-radius: 18px;
+  padding: 8px 0;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.tomenu-hoverable {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 14px 40px;
+  display: inline-block;
+}
+.tomenu-hoverable-active {
+  background: #4b4b4b;
+}
