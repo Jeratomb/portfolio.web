@@ -7,6 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Projects from "./pages/Projects";
 import NavBar from "./components/NavBar/NavBar";
 import Auth from "./pages/Auth";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />}></Route>
           <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

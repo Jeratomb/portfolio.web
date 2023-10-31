@@ -1,11 +1,7 @@
-import ListProject from "../components/Project/ListProject";
-
 export default function Skills() {
   return (
     <>
-      <div className="App-main">
-        <ListProject />
-      </div>
+      <div className="App-main">Hello</div>
     </>
   );
 }

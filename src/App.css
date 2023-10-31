@@ -66,9 +66,25 @@ html {
 .modal-title {
   color: white !important;
 }
-
-.Modal {
+.Modal-header {
   background-color: #282c34;
+  color: #282c34;
+}
+
+.Modal-body_login {
+  background-color: #282c34;
+  color: #282c34;
+}
+
+.Modal-body_logout {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #282c34;
+  color: #282c34;
+}
+.Modal-footer {
+  background-color: #282c34 !important;
   color: #282c34;
 }
 

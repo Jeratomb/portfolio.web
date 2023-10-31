@@ -39,6 +39,10 @@
   text-decoration: none;
 }
 
+#underline {
+  text-decoration: underline;
+}
+
 a:hover {
   background: #4b4b4b;
 }
