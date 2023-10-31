@@ -27,9 +27,9 @@ class ListProject extends Component {
 
     return (
       <Container className="container">
-        <Row xs={4} className="row">
+        <Row className="row">
           {projects.map((project) => (
-            <Col>
+            <Col className="centered">
               <ProjectCard project={project} />
             </Col>
           ))}
