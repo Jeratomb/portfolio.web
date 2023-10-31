@@ -3,9 +3,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Modal from "react-bootstrap/Modal";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Alert from "react-bootstrap/Alert";
+import "../components/NavBar/NavBar.css";
 
 function Auth() {
   const [show, setShow] = useState(false);
@@ -35,19 +34,15 @@ function Auth() {
   return (
     <>
       {success ? (
-        <section>
-          <Nav key="success" variant="success">
-            <Nav.Link>Signed in as: {credentials.Email}</Nav.Link>
-          </Nav>
-        </section>
+        <a className="link-hoverable">Signed in as: {credentials.Email}</a>
       ) : (
-        <div>
-          <Navbar.Collapse className="justify-content-end">
-            <Nav.Link onClick={handleShow}>Sign In</Nav.Link>
-          </Navbar.Collapse>
+        <>
+          <a onClick={handleShow} className="link-hoverable">
+            Sign In
+          </a>
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton className="Modal">
-              <Modal.Title className="header-modal">Sign In</Modal.Title>{" "}
+              <Modal.Title className="modal-title">Sign In</Modal.Title>{" "}
             </Modal.Header>
             <Modal.Body className="Modal">
               <Form>
@@ -85,7 +80,7 @@ function Auth() {
               </Button>
             </Modal.Footer>
           </Modal>
-        </div>
+        </>
       )}
     </>
   );

@@ -1,9 +1,12 @@
 .menuholder {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 21px 21px 0px 21px;
   background: transparent;
   z-index: 999;
 }
@@ -25,14 +28,17 @@
   margin: 0 auto;
 }
 
-.tomenu-hoverable {
+.link-hoverable {
   color: #fff;
   font-weight: 500;
   font-size: 14px;
   border-radius: 14px;
   padding: 14px 40px;
   display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
 }
-.tomenu-hoverable-active {
+
+a:hover {
   background: #4b4b4b;
 }

@@ -2,14 +2,58 @@
   margin: 10px;
   font-size: 14px;
 }
+
 .Card.Text {
   font-size: 10px;
 }
+
 .footer p {
   background-color: inherit;
 }
 
-.test {
+.container {
+  margin-top: 35px;
+}
+
+.row {
   margin-bottom: 100px;
   margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  .Card {
+    font-size: 12px;
+  }
+
+  .Card.Text {
+    font-size: 9px;
+
+    .container {
+      margin-top: 25px;
+    }
+
+    .row {
+      margin-bottom: 50px;
+      margin-top: 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .Card {
+      font-size: 10px;
+    }
+
+    .Card.Text {
+      font-size: 8px;
+    }
+
+    .container {
+      margin-top: 15px;
+    }
+
+    .row {
+      margin-bottom: 25px;
+      margin-top: 15px;
+    }
+  }
 }

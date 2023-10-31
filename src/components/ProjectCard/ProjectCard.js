@@ -21,7 +21,18 @@ function ProjectCard({ project }) {
           <ul>{project.creationDate}</ul>
           <ul>{project.lastUpdateDate}</ul>
         </Card.Text>
-        <Button variant="primary">Check on Github</Button>
+        <Button
+          variant="primary"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              "https://github.com/Jeratomb?tab=repositories",
+              "_blank"
+            );
+          }}
+        >
+          Check on Github
+        </Button>
       </Card.Body>
     </Card>
   );

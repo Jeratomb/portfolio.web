@@ -1,92 +1,4 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-main {
-  background-color: #282c34;
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-main-home {
-  background-color: #282c34;
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.red {
-  background-color: red;
-}
-.Button {
-  color: aliceblue;
-}
-.yellow {
-  background-color: yellow;
-}
-.blue {
-  background-color: blue;
-}
-
-/* //Login */
-
-.Modal {
-  background-color: #282c34;
-  color: #282c34;
-}
-.Textbox {
-  margin-bottom: 5px;
-}
-
-.header-modal {
-  color: white;
-}
-
+/* Reset und Basiseinstellungen */
 html {
   background-color: #282c34;
 }
@@ -99,15 +11,67 @@ html {
   margin-top: 0px;
   align-items: flex-start;
 }
-.Nav {
-  background-color: #333;
+
+/* Komponenten-Stile */
+
+.App-header,
+.App-main,
+.App-main-home {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
 }
-.Nav a {
-  color: inherit;
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-main {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.App-main-home {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.Button {
+  color: aliceblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* Modale */
+
+.modal-title {
+  color: white !important;
+}
+
+.Modal {
+  background-color: #282c34;
+  color: #282c34;
+}
+
+.Textbox {
+  margin-bottom: 5px;
 }
