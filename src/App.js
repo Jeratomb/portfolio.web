@@ -11,20 +11,23 @@ import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/auth" element={<Auth />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </BrowserRouter>
+    <>
+      <header><NavBar /></header>
+      <main className="App-main">
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />}></Route>
+            <Route path="/auth" element={<Auth />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </BrowserRouter>
+      </main>
+
       <Footer />
-    </div>
+    </>
   );
 }
 
