@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Modal from "react-bootstrap/Modal";
 import "../components/NavBar/NavBar.css";
+import "./Auth.css";
 
 function Auth() {
   const [show, setShow] = useState(false);

@@ -3,10 +3,11 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./ProjectCard.css";
 
+
 function ProjectCard({ project }) {
   return (
     <Card style={{ width: "15rem" }} className="card d-flex flex-column Card">
-      <Card.Header>
+      <Card.Header tag={project.id}>
         <Card.Title>{project.name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Subtitle</Card.Subtitle>
       </Card.Header>
@@ -14,12 +15,11 @@ function ProjectCard({ project }) {
         <Card.Text>
           {project.description}
           <ul>
-            {project.usedSkills.map((knowledge) => (
-              <li key={knowledge._id}>{knowledge._name}</li>
+            {project.usedSkills.map((skill) => (
+              <li key={skill.id}>{skill.name}</li>
             ))}
           </ul>
-          <ul>{project.creationDate}</ul>
-          <ul>{project.lastUpdateDate}</ul>
+          <ul>Created: {new Intl.DateTimeFormat('de-DE', {day: '2-digit', month: '2-digit', year: 'numeric'}).format(project.Createded)}</ul>
         </Card.Text>
         <Button
           variant="primary"

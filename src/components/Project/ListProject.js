@@ -12,7 +12,7 @@ class ListProject extends Component {
   };
 
   componentDidMount() {
-    fetch("/Project")
+    fetch("/Project/Get")
       .then((res) => res.json())
       .then((result) => {
         this.setState({ projects: result });

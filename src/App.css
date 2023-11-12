@@ -1,15 +1,12 @@
 /* Reset und Basiseinstellungen */
 html {
-  background-color: #282c34;
+  /* background-color: #282c34; */
 }
 
 .body {
   min-height: 100vh;
-  background-color: #282c34;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  align-items: flex-start;
 }
 
 /* Komponenten-Stile */
@@ -22,12 +19,12 @@ html {
   color: white;
 }
 
-.App-header {
+/* .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .App-main {
   margin-top: auto;
@@ -43,22 +40,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.red {
-  background-color: red;
-}
-
-.Button {
-  color: aliceblue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.blue {
-  background-color: blue;
 }
 
 /* Modale */
