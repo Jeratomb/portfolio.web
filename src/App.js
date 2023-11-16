@@ -2,12 +2,12 @@ import Footer from "./components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import NotFoundPage from "./pages/NotFoundPage";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects";
 import NavBar from "./components/NavBar/NavBar";
-import Auth from "./pages/Auth";
-import Skills from "./pages/Skills";
+import Auth from "./pages/Auth/Auth";
+import Skills from "./pages/Skills/Skills";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         </BrowserRouter>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
