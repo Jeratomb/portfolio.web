@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import SkillsRect from "../SkillsRect/SkillsRect";
-import Skills from "../../pages/Skills";
 
 class ListSkills extends Component {
   state = {

@@ -17,13 +17,8 @@ function ListProject({ props }) {
   const handleClose = () => setShow(false);
   // const { projects } = this.state;
 
-<<<<<<< HEAD
-  componentDidMount() {
-    fetch("/Project")
-=======
   useEffect(() => {
     fetch("/Project/Get")
->>>>>>> d2ee1d1d34842320a4322c355677405a5a46db74
       .then((res) => res.json())
       .then((result) => {
         this.setState({ projects: result });

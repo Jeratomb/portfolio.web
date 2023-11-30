@@ -1,7 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import "./SkillsRect.css";
-import Skills from "../../pages/Skills";
 
 function SkillsRect({ skill }) {
   return (

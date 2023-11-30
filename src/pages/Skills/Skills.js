@@ -1,4 +1,4 @@
-import ListSkills from "../components/Skills/ListSkills";
+import ListSkills from "../../components/Skills/ListSkills";
 
 export default function Skills() {
   return (

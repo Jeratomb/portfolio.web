@@ -16,7 +16,7 @@ html {
 .App-main-home {
   background-color: #282c34;
   font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
 /* .App-header {
@@ -64,7 +64,7 @@ html {
   background-color: #282c34;
   color: #282c34;
 }
-.Modal-footer {
+.footer {
   background-color: #282c34 !important;
   color: #282c34;
 }
