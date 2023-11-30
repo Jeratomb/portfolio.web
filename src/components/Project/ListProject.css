@@ -1,3 +1,9 @@
+.App-main {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .Card {
   margin: 10px;
   font-size: 14px;
@@ -13,6 +19,7 @@
 
 .container {
   border-radius: 20px;
+  container-type: normal;
   margin-top: 35px;
   margin-bottom: 30px;
   display: flex;
@@ -31,6 +38,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@container (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 415px) {

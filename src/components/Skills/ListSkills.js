@@ -11,7 +11,7 @@ class ListSkills extends Component {
   };
 
   componentDidMount() {
-    fetch("/Skills")
+    fetch("/Skills/Get")
       .then((res) => res.json())
       .then((result) => {
         this.setState({ skills: result });

@@ -2,7 +2,7 @@
   "name": "portfolio.web",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4444/api",
+  "proxy": "http://localhost:5278",
   "dependencies": {
     "@supabase/supabase-js": "^2.38.4",
     "@testing-library/jest-dom": "^5.17.0",
