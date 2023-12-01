@@ -11,7 +11,7 @@ import Auth from './pages/Auth'
 
 function App() {
    return (
-    <div>
+    <>
       <NavBar />
       <BrowserRouter>
       <Routes>
@@ -23,7 +23,7 @@ function App() {
       </Routes>
       </BrowserRouter>
       <Footer />
-    </div>
+    </>
 );
 }
 

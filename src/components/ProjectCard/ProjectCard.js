@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
         <Card.Subtitle className="mb-2 text-muted">Subtitle</Card.Subtitle>
       </Card.Header>
       <Card.Body className="d-flex flex-column justify-content-end align-items-center">
-        <Card.Text>
+        {/* <Card.Text>
           {project.description}
           <ul>
             {project.usedSkills.map((knowledge) => (
@@ -20,7 +20,7 @@ function ProjectCard({ project }) {
           </ul>
           <ul>{project.creationDate}</ul>
           <ul>{project.lastUpdateDate}</ul>
-        </Card.Text>
+        </Card.Text> */}
         <Button variant="primary">Check on Github</Button>
       </Card.Body>
     </Card>
