@@ -1,10 +1,10 @@
-import ListProject from "../components/Project/ListProject";
+import ListSkills from "../../components/Skills/ListSkills";
 
 export default function Skills() {
   return (
     <>
       <div className="App-main">
-        <ListProject />
+        <ListSkills></ListSkills>
       </div>
     </>
   );

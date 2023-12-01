@@ -1,15 +1,37 @@
-
-.Card {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  font-size: 14px;
-
-
+.card {
+  size: 200px;
 }
-.Card.Text{
-  font-size: 10px;
+
+.image-container {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: auto;
+  height: auto;
 }
-.footer p{
-  background-color: inherit;
+.card-title {
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.card-body {
+}
+
+.card-content {
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.card-created {
+  font-family: "Arial", sans-serif;
+  font-size: 17px;
+}
+
+.card-button {
+  margin-top: 0px;
+  display: block;
 }

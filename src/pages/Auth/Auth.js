@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Modal from "react-bootstrap/Modal";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Alert from "react-bootstrap/Alert";
+import "../../components/NavBar/NavBar.css";
+import "./Auth.css";
 
 function Auth() {
   const [show, setShow] = useState(false);
@@ -18,7 +17,12 @@ function Auth() {
     console.log(credentials.Email);
     console.log(credentials.Pwd);
     setSuccess(true);
-    setShow(true);
+    setShow(false);
+  };
+
+  const handleLogout = async (e) => {
+    setSuccess(false);
+    setShow(false);
   };
 
   const [credentials, setCredentialsInfos] = useState({ Email: "", Pwd: "" });
@@ -35,21 +39,36 @@ function Auth() {
   return (
     <>
       {success ? (
-        <section>
-          <Nav key="success" variant="success">
-            <Nav.Link>Signed in as: {credentials.Email}</Nav.Link>
-          </Nav>
-        </section>
-      ) : (
-        <div>
-          <Navbar.Collapse className="justify-content-end">
-            <Nav.Link onClick={handleShow}>Sign In</Nav.Link>
-          </Navbar.Collapse>
+        <>
+          <a className="link-hoverable" id="underline" onClick={handleShow}>
+            Logout
+          </a>
           <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton className="Modal">
-              <Modal.Title className="header-modal">Sign In</Modal.Title>{" "}
+            <Modal.Header closeButton className="Modal-header">
+              <Modal.Title className="modal-title">
+                Do you really want to logout?
+              </Modal.Title>{" "}
             </Modal.Header>
-            <Modal.Body className="Modal">
+            <Modal.Body className="Modal-body_logout">
+              <Button variant="secondary" onClick={handleClose}>
+                Cancel
+              </Button>
+              <Button variant="danger" onClick={handleLogout}>
+                Logout
+              </Button>
+            </Modal.Body>
+          </Modal>
+        </>
+      ) : (
+        <>
+          <a onClick={handleShow} className="link-hoverable">
+            Sign In
+          </a>
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton className="Modal-header">
+              <Modal.Title className="modal-title">Sign In</Modal.Title>{" "}
+            </Modal.Header>
+            <Modal.Body className="Modal-body_login">
               <Form>
                 <Form.Group controlId="Auth.Email">
                   <FloatingLabel
@@ -76,7 +95,7 @@ function Auth() {
                 </Form.Group>
               </Form>
             </Modal.Body>
-            <Modal.Footer className="Modal">
+            <Modal.Footer className="Modal-footer">
               <Button variant="secondary" onClick={handleClose}>
                 Cancel
               </Button>
@@ -85,7 +104,7 @@ function Auth() {
               </Button>
             </Modal.Footer>
           </Modal>
-        </div>
+        </>
       )}
     </>
   );
