@@ -29,9 +29,12 @@ class ListProject extends Component {
       <Container className="container">
         <Row className="row">
           {projects.map((project) => (
-            <Col className="centered">
-              <ProjectCard project={project} />
-            </Col>
+            <>
+              {console.log(project)}
+              <Col className="centered">
+                <ProjectCard project={project} />
+              </Col>
+            </>
           ))}
         </Row>
       </Container>

@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import SkillsRect from "../SkillsRect/SkillsRect";
-import Skills from "../../pages/Skills";
 
 class ListSkills extends Component {
   state = {
@@ -11,7 +10,7 @@ class ListSkills extends Component {
   };
 
   componentDidMount() {
-    fetch("/Skills/Get")
+    fetch("/Skill")
       .then((res) => res.json())
       .then((result) => {
         this.setState({ skills: result });
@@ -25,17 +24,16 @@ class ListSkills extends Component {
     const { skills } = this.state;
 
     return (
-      <Container>
-        <Row>
-          {/* {skills.map((skill) => (
-              <Col>
-                <SkillsRect skills={skills} />
-                Test
+      <Container className="container">
+        <Row className="row">
+          {skills.map((skill) => (
+            <>
+              {console.log(skill)}
+              <Col className="centered">
+                <SkillsRect skills={skill} />
               </Col>
-            ))} */}
-          <Col>
-            <SkillsRect skills={skills} />
-          </Col>
+            </>
+          ))}
         </Row>
       </Container>
     );
